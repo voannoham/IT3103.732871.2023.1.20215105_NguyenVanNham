@@ -13,3 +13,4 @@ bin/
 .project/
 /.project
 .project
+module-info.java
