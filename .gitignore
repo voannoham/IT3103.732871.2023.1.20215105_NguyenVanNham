@@ -9,6 +9,6 @@ bin/
 /bin
 .classpath/
 /.classpath
-/JavaBasics/.classpath/
+.classpath
 .project/
-*/.project
+/.project
