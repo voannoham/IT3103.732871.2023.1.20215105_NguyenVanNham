@@ -1,5 +1,5 @@
 //Nguyen Van Nham 20215015
-//ex6.6	add two matrices of the same size.
+//ex6.6	add two matrices of the same size
 package ooplab1;
 import java.util.*;
 public class AddTwoMatrices {
