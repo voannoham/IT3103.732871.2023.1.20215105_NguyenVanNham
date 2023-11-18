@@ -1,0 +1,14 @@
+/node_modules
+/vendor
+/.idea
+.idea/
+/.metadata
+/.settings
+.settings/
+bin/
+/bin
+.classpath/
+/.classpath
+/JavaBasics/.classpath/
+.project/
+*/.project
