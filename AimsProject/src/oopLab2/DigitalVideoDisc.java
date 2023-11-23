@@ -61,4 +61,10 @@ public class DigitalVideoDisc{
 	public float getCost() {
 		return cost;// gives the value of cost to the calling method
 	}
+	
+	//set title
+	public void setTitle(String title){
+		this.title = title;
+	}
+	
 }
