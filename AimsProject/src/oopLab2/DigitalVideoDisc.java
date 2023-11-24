@@ -8,9 +8,14 @@ public class DigitalVideoDisc{
 	private int length;//instance variable that stores the length
 	private float cost;//instance variable that stores the cost
 	
+	//lab3
+	private static int nbDigitalVideoDiscs = 0;//class variable
+	private int id;//instance variable
+	
 	//constructor with parameter title
 	public DigitalVideoDisc(String title) {
 		this.title = title;
+		id = ++nbDigitalVideoDiscs;//update number of dvd and assign to id
 	}
 	
 	//constructor with parameter category, title and cost
@@ -18,6 +23,7 @@ public class DigitalVideoDisc{
 		this.title = title;
 		this.category = category;
 		this.cost = cost;
+		id = ++nbDigitalVideoDiscs;//update number of dvd and assign to id
 	}
 	
 	//constructor with parameter director, category, title and cost
@@ -26,6 +32,7 @@ public class DigitalVideoDisc{
 		this.category = category;
 		this.director = director;
 		this.cost = cost;
+		id = ++nbDigitalVideoDiscs;//update number of dvd and assign to id
 	}
 	
 	//constructor with parameter title, category, director, length and cost
@@ -35,6 +42,7 @@ public class DigitalVideoDisc{
 		this.director = director;
 		this.length = length;
 		this.cost = cost;
+		id = ++nbDigitalVideoDiscs;//update number of dvd and assign to id
 	}
 	
 	//return the title
@@ -62,9 +70,21 @@ public class DigitalVideoDisc{
 		return cost;// gives the value of cost to the calling method
 	}
 	
+
 	//set title
 	public void setTitle(String title){
 		this.title = title;
 	}
 	
+
+	//return id
+	public int getId(){
+		return id;//gives the value of id to the calling method
+	}
+	
+	//static method get static nbDigitalVideoDiscs value
+	public static int getNbDigitalVideoDiscs(){
+		return nbDigitalVideoDiscs;
+	}
+
 }
