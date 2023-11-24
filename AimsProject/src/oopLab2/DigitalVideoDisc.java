@@ -70,6 +70,7 @@ public class DigitalVideoDisc{
 		return cost;// gives the value of cost to the calling method
 	}
 	
+
 	//return id
 	public int getId(){
 		return id;//gives the value of id to the calling method
@@ -79,4 +80,11 @@ public class DigitalVideoDisc{
 	public static int getNbDigitalVideoDiscs(){
 		return nbDigitalVideoDiscs;
 	}
+
+	//set title
+	public void setTitle(String title){
+		this.title = title;
+	}
+	
+
 }
