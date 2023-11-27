@@ -79,4 +79,24 @@ public class DigitalVideoDisc{
 	public static int getNbDigitalVideoDiscs(){
 		return nbDigitalVideoDiscs;
 	}
+	
+	// check if the corresponding disk is a match given the ID
+	public boolean isMath(int id) {
+		if (this.id == id) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	// check if the corresponding disk is a match given the title
+		public boolean isMath(String title) {
+			if (this.title == title) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
 }
