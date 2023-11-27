@@ -70,8 +70,14 @@ public class DigitalVideoDisc{
 		return cost;// gives the value of cost to the calling method
 	}
 	
+	
+  //set title
+	public void setTitle(String title){
+		this.title = title;
+	}
+	
 
-	//return id
+  //return id
 	public int getId(){
 		return id;//gives the value of id to the calling method
 	}
@@ -81,10 +87,23 @@ public class DigitalVideoDisc{
 		return nbDigitalVideoDiscs;
 	}
 
-	//set title
-	public void setTitle(String title){
-		this.title = title;
-	}
-	
-
+	// check if the corresponding disk is a match given the ID
+		public boolean isMath(int id) {
+			if (this.id == id) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		
+		// check if the corresponding disk is a match given the title
+			public boolean isMath(String title) {
+				if (this.title == title) {
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
 }

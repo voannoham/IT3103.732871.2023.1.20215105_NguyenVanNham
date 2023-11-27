@@ -21,5 +21,15 @@ public class CartTest {
 		//Test the print method
 		cart.print();
 		//to--do:test the search methods here
+		//Test the print method
+				cart.print();
+				//to--do:test the search methods here
+				//search by id
+				cart.searchId(2);
+				cart.searchId(4);
+				
+				//search by title
+				cart.searchTitle("Star Wars");
+				cart.searchTitle("4343");
 	}
 }
