@@ -41,6 +41,15 @@ public class Cart {
 		}
 		return sum;//gives the value of sum to the calling method
 	}
+	
+	//print the list of a cart
+	public void print() {
+		System.out.printf("Ordered Items:\n");
+		for (int i = 0; i < qtyOrdered; i++) {
+			System.out.printf("%d.DVD-[%s]-[%s]-[%s]-[%d]:[%.2f]$\n",itemsOrdered[i].getId(), itemsOrdered[i].getTitle(), itemsOrdered[i].getCategory(), itemsOrdered[i].getDirector(), itemsOrdered[i].getLength(), itemsOrdered[i].getCost());
+		}
+		System.out.printf("Total cost: %.2f\n",totalCost());
+	}
 }
 
 
