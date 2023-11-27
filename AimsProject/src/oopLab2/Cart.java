@@ -82,6 +82,46 @@ public class Cart {
 		}
 		System.out.printf("Total cost: %.2f\n",totalCost());
 	}
+	
+	//search by id
+		public void searchId(int discId){
+		    boolean flag = false;//indicate no match
+		    int i;
+			for (i = 0; i < qtyOrdered; i++) {
+				if (itemsOrdered[i].isMath(discId) == true){
+					flag = true;//indicate successfully match
+					break;
+				}
+			}
+			//print result
+			if (flag == false) {//no match
+				System.out.printf("NguyenVanNham20215105-not found\n");
+			}
+			else {//find successful
+				System.out.printf("NguyenVanNham20215105-find successful:\n");
+				System.out.printf("%d.DVD-[%s]-[%s]-[%s]-[%d]:[%.2f]$\n",itemsOrdered[i].getId(), itemsOrdered[i].getTitle(), itemsOrdered[i].getCategory(), itemsOrdered[i].getDirector(), itemsOrdered[i].getLength(), itemsOrdered[i].getCost());
+			}
+		}
+		
+		//search by title
+			public void searchTitle(String discTitle){
+			    boolean flag = false;//indicate no match
+			    int i;
+				for (i = 0; i < qtyOrdered; i++) {
+					if (itemsOrdered[i].isMath(discTitle) == true){
+						flag = true;//indicate successfully match
+						break;
+					}
+				}
+				//print result
+				if (flag == false) {//no match
+					System.out.printf("NguyenVanNham20215105-not found\n");
+				}
+				else {//find successful
+					System.out.printf("NguyenVanNham20215105-find successful:\n");
+					System.out.printf("%d.DVD-[%s]-[%s]-[%s]-[%d]:[%.2f]$\n",itemsOrdered[i].getId(), itemsOrdered[i].getTitle(), itemsOrdered[i].getCategory(), itemsOrdered[i].getDirector(), itemsOrdered[i].getLength(), itemsOrdered[i].getCost());
+				}
+			}
 }
 
 
