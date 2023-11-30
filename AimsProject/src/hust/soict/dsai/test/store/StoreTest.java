@@ -1,6 +1,9 @@
 //NguyenVanNham 20215105
 //lab3 StoreTest.java
-package oopLab2;
+package hust.soict.dsai.test.store;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.store.Store;
 
 public class StoreTest {
 	public static void main(String[] args) {

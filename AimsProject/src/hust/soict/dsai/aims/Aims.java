@@ -1,4 +1,8 @@
-package oopLab2;
+package hust.soict.dsai.aims;
+
+import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+
 //Nguyễn Văn Nhâm 20215105
 ///lab 2 Aims.java
 public class Aims {

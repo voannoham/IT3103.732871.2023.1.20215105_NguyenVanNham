@@ -1,6 +1,9 @@
 //Nguyen Van Nham 20215105
 //lab2-3 Cart.java
-package oopLab2;
+package hust.soict.dsai.aims.cart;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+
 public class Cart {
 	public static final int MAX_NUMBER_ORDERED = 20; //constant max number order of DVD
 	

@@ -1,4 +1,4 @@
-package oopLab2;
+package hust.soict.dsai.aims.disc;
 //Nguyễn Văn Nhâm 20215105
 //lab2 DigitalVideoDisc.java
 public class DigitalVideoDisc{

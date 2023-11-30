@@ -1,6 +1,8 @@
 //lab3 NguyenVanNham20215105
 //Store.java
-package oopLab2;
+package hust.soict.dsai.aims.store;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Store {
 	public static final int SIZE = 100;//the size of array of dvd
